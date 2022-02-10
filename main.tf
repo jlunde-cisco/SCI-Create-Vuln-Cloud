@@ -98,6 +98,9 @@ resource "azurerm_linux_virtual_machine" "freedom_linux_machine" {
     version   = "latest"
   }
 
+  identity {
+    type = "SystemAssigned"
+  }
   admin_ssh_key {
     username   = "adminuser"
     public_key = file("id_rsa.pub")
