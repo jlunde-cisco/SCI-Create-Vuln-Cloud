@@ -1,4 +1,5 @@
 # README for Secure Cloud Insight Instant Demo Env.
+![alt text](https://github.com/jlunde-cisco/SCI-Create-Vuln-Cloud/blob/main/sci_create_vulnerable_cloud.PNG)
 * Ensure your box has terraform installed
 * Ensure your box has the AWS CLI installed
   * Run AWS Configure with Access Key, Secret, and default AZ
