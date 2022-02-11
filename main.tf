@@ -5,6 +5,10 @@ terraform {
       source  = "hashicorp/azurerm"
       version = "~> 2.65"
     }
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 3.0"
+    }
   }
 
   required_version = ">= 1.1.0"
@@ -12,6 +16,10 @@ terraform {
 
 provider "azurerm" {
   features {}
+}
+
+provider "aws" {
+  region = "us-east-1"
 }
 
 resource "azurerm_resource_group" "rg_1" {

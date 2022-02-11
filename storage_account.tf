@@ -13,3 +13,8 @@ resource "azurerm_storage_container" "freedom_blob" {
   container_access_type = "container"
 }
 
+resource "aws_s3_bucket" "freedom_bucket" {
+  bucket = "terraform-s3-freedom"
+  acl    = "public-read"
+  policy = file("s3_policy.json")
+}
