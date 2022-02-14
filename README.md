@@ -7,4 +7,5 @@
   * Run AZ login and configure credentials
 
 Also, updated the .pub file with your own public key. This is used in the azure module for authentication to your linux vm.
+Testing updates...
 
