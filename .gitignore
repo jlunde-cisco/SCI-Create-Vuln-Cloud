@@ -4,4 +4,4 @@
 *.tfstate
 *.tfstate.*
 #  Lock file
-**/.terraform.lock*
+**/.terraform.lock*id
