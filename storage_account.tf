@@ -15,6 +15,10 @@ resource "azurerm_storage_container" "freedom_blob" {
 
 resource "aws_s3_bucket" "freedom_bucket" {
   bucket = "terraform-s3-freedom"
-  acl    = "public-read"
   policy = file("s3_policy.json")
+}
+
+resource "aws_s3_bucket_acl" "public" {
+  bucket = aws_s3_bucket.freedom_bucket.id
+  acl    = "public-read"
 }
